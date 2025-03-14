@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sadiq_reports *.css
+recursive-include sadiq_reports *.csv
+recursive-include sadiq_reports *.html
+recursive-include sadiq_reports *.ico
+recursive-include sadiq_reports *.js
+recursive-include sadiq_reports *.json
+recursive-include sadiq_reports *.md
+recursive-include sadiq_reports *.png
+recursive-include sadiq_reports *.py
+recursive-include sadiq_reports *.svg
+recursive-include sadiq_reports *.txt
+recursive-exclude sadiq_reports *.pyc
