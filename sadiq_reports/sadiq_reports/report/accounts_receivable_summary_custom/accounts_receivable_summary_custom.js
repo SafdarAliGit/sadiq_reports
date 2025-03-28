@@ -94,7 +94,7 @@ frappe.query_reports["Accounts Receivable Summary Custom"] = {
 			"label": __("Customer Group"),
 			"fieldtype": "Link",
 			"options": "Customer Group",
-			"hidden": 1
+			"hidden": 0
 		},
 		{
 			"fieldname":"payment_terms_template",
