@@ -50,7 +50,7 @@ class AccountsReceivableSummary(ReceivablePayableReport):
 				self.filters.show_future_payments,
 				self.filters.company,
 				party=party,
-				account_type=self.account_type,
+				account_type=self.account_type if self.account_type == "Receivable" else "Payable",
 			)
 			or {}
 		)
