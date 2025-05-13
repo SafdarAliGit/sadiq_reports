@@ -18,7 +18,7 @@ frappe.query_reports["Accounts Receivable Summary Custom"] = {
 			"label": __("Posting Date"),
 			"fieldtype": "Date",
 			"default": frappe.datetime.get_today(),
-			"hidden": 1
+			"hidden": 0
 		},
 		{
 			"fieldname":"ageing_based_on",
