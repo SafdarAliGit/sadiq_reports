@@ -49,7 +49,8 @@ class AccountsReceivableSummary(ReceivablePayableReport):
 				self.filters.report_date,
 				self.filters.show_future_payments,
 				self.filters.company,
-				party=party
+				party=party,
+				# account_type=self.account_type              custom comment
 			)
 			or {}
 		)
@@ -58,8 +59,8 @@ class AccountsReceivableSummary(ReceivablePayableReport):
 			gl_balance_map = get_gl_balance(self.filters.report_date)
 
 		for party, party_dict in self.party_total.items():
-			if party_dict.outstanding == 0:
-				continue
+			# if party_dict.outstanding == 0:
+			# 	continue
 
 			row = frappe._dict()
 
